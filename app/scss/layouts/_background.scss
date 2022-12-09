@@ -1,0 +1,18 @@
+.blob{
+    &__1{
+        position: absolute;
+        right: 0;
+        top: 0;
+        transform: scale(150%);
+        transform-origin: top right;
+        z-index: -1;
+    }
+    
+    &__2{
+        position: absolute;
+        left: 0;
+        top: 161px;
+        transform: scale(150%);
+        z-index: -1;
+    }
+}     
