@@ -2,11 +2,10 @@
     max-width: 1134px;
     margin: 0 auto;
     padding-top: 220px;
-    height: 800px;
+
     &__main {
         display: grid;
         grid-template-columns: 50% 1fr 50% 1fr;
-        grid-template-rows: auto 1fr auto 1fr;
 
         &__content {
             h1 {
@@ -64,11 +63,30 @@
         font-weight: 400;
         font-size: 24px;
         line-height: 32px;
-        position: relative;
 
         text-align: center;
 
         color: #FFB60E;
-        margin-top: 92px;
+        margin-top: 97px;
+    }
+
+
+    @keyframes translateinfinite {
+        100% { transform:translateX(calc(-180px * 12));  }
+    }
+
+    .third_party {
+        position: absolute;
+        left: 0;
+        width: 100%;
+        display: inline-flex;
+        flex-wrap: nowrap;
+        align-items: center;
+        gap: 57px;
+        overflow: hidden;
+        img {
+            animation:translateinfinite 25s linear infinite;
+        }
+        z-index: 1;
     }
 }
